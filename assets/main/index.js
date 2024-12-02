@@ -5340,7 +5340,7 @@ window.__require = function e(t, n, r) {
             }, t.send = function(e) {
                 var t = this;
                 if (this._destroyed || this._sm.curState == n.WebSocketClientState.Error) return null;
-                var r = this.resetSendData();de
+                var r = this.resetSendData();
                 if (r.ack = this.getAndUseAck(), r.body = o.encode(e.params), r.c = e.c, r.c || (r.cmd = e.cmd), 
                 r.hint = e.hint, r.seq = ++this._sndQueue.seq, r.time = Date.now(), !s.debug) {
                     var i = Object.assign({}, r);
